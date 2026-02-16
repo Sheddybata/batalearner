@@ -28,6 +28,11 @@ export default function About() {
       role: "Board member",
       image: "/founders/ambejose.png",
     },
+    {
+      name: "Abdulaziz Saeed",
+      role: "Lead Developer",
+      image: "/founders/abdulazizsaeed.png",
+    },
   ];
 
   return (
@@ -111,8 +116,8 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            title="Founder Spotlight"
-            subtitle="Add your founder portraits in /public/founders to personalize this section."
+            title="Leadership & Team"
+            subtitle="Meet the founders and key team members driving Bata Learner forward."
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -81,12 +81,15 @@ export default function Contact() {
     setSubmitError(null);
     setIsSubmitting(true);
 
-    const formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
+    let formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID?.trim();
     if (!formId) {
       setSubmitError("Form is not configured. Please set NEXT_PUBLIC_FORMSPREE_FORM_ID.");
       setIsSubmitting(false);
       return;
     }
+    // If user pasted full URL (e.g. https://formspree.io/f/xojndgoo), use only the ID
+    const match = formId.match(/formspree\.io\/f\/([a-z0-9]+)/i) || formId.match(/^([a-z0-9]+)$/i);
+    formId = match ? match[1] : formId;
 
     try {
       const res = await fetch(`https://formspree.io/f/${formId}`, {
