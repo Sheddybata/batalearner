@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #682f63;
+  --primary-dark: #712c6a;
+  --primary-light: #8a3d7f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+  
+  /* Keep form controls finger-friendly by default */
+  button, input, select, textarea {
+    @apply min-h-[48px];
+  }
+}
+
+@layer components {
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px];
+  }
+
+  .glassmorphism {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
