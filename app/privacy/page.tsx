@@ -31,8 +31,8 @@ export default function PrivacyPage() {
           </p>
           <p>
             For privacy questions or requests, contact us at{" "}
-            <a href="mailto:hello@batalearner.ng" className="text-primary hover:text-primary-dark">
-              hello@batalearner.ng
+            <a href="mailto:hello@batalearner.edu.ng" className="text-primary hover:text-primary-dark">
+              hello@batalearner.edu.ng
             </a>
             .
           </p>

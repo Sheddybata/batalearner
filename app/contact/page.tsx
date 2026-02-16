@@ -113,7 +113,7 @@ export default function Contact() {
       }
       setIsSubmitted(true);
     } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Failed to send. Please try again or email us at hello@batalearner.ng.");
+      setSubmitError(err instanceof Error ? err.message : "Failed to send. Please try again or email us at hello@batalearner.edu.ng.");
     } finally {
       setIsSubmitting(false);
     }
@@ -491,8 +491,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:hello@batalearner.ng" className="text-primary hover:text-primary-dark transition-colors">
-                    hello@batalearner.ng
+                  <a href="mailto:hello@batalearner.edu.ng" className="text-primary hover:text-primary-dark transition-colors">
+                    hello@batalearner.edu.ng
                   </a>
                 </div>
               </div>

@@ -7,7 +7,7 @@ import Footer from "@/components/shared/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://batalearner.ng"),
+  metadataBase: new URL("https://batalearner.edu.ng"),
   title: {
     default: "Bata Learner - Sovereign Academic Infrastructure",
     template: "%s | Bata Learner",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Bata Learner - Sovereign Academic Infrastructure",
     description:
       "A global open-source learning management system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria's educational institutions.",
-    url: "https://batalearner.ng",
+    url: "https://batalearner.edu.ng",
     images: [{ url: "/batalearner.png" }],
   },
   twitter: {

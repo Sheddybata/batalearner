@@ -59,11 +59,11 @@ const Footer = () => {
 
             <div className="flex flex-col gap-2 text-sm">
               <a
-                href="mailto:hello@batalearner.ng"
+                href="mailto:hello@batalearner.edu.ng"
                 className="inline-flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>hello@batalearner.ng</span>
+                <span>hello@batalearner.edu.ng</span>
               </a>
               <a
                 href="tel:+2348149649942"
