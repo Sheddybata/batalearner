@@ -7,6 +7,7 @@ import {
   Award,
   BookCheck,
   BookOpen,
+  CheckCircle2,
   Code,
   Smartphone,
   FileText,
@@ -154,6 +155,89 @@ export default function Home() {
                   Developer Hub
                   <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certification Value Section */}
+      <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            title="Official Recognition"
+            subtitle="Nationally recognised credentials that open doors in the public and private sectors"
+          />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* Left Column: Why this matters */}
+            <div className="group">
+              <div className="glassmorphism rounded-2xl p-8 h-full card-hover">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary-dark/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <CheckCircle2 className="w-8 h-8 text-primary-dark" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Why this matters
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">Federal Civil Service Recognition</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">National Skills Qualification Framework (NSQF) Aligned</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">Verified by the Computer Professional Registration Council (CPN)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">Direct pathway to professional employment</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Right Column: Official Recognition */}
+            <div className="group">
+              <div className="glassmorphism rounded-2xl p-8 h-full card-hover border-2 border-nigerian-green/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-nigerian-green/20 to-nigerian-green/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Shield className="w-8 h-8 text-nigerian-green" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Regulatory Details
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-2">
+                    <Shield className="w-5 h-5 text-nigerian-green mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="text-sm font-semibold text-gray-900">Center Type: </span>
+                      <span className="text-sm text-gray-600">Approved Skill Training Center (STC)</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <Shield className="w-5 h-5 text-nigerian-green mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="text-sm font-semibold text-gray-900">Lead Agency: </span>
+                      <span className="text-sm text-gray-600">National Board for Technical Education (NBTE)</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <Award className="w-5 h-5 text-nigerian-green mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="text-sm font-semibold text-gray-900">Awarding Body: </span>
+                      <span className="text-sm text-gray-600">NABTEB</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <Shield className="w-5 h-5 text-nigerian-green mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="text-sm font-semibold text-gray-900">Professional Oversight: </span>
+                      <span className="text-sm text-gray-600">CPN</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShieldCheck } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,6 +53,13 @@ const Navbar = () => {
             : "bg-white/80 backdrop-blur-sm"
         }`}
       >
+        {/* Top announcement bar - Nigerian green */}
+        <div className="bg-nigerian-green flex items-center justify-center gap-2 py-2 px-4 text-center text-sm font-medium text-white antialiased">
+          <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden />
+          <span>
+            NBTE Approved Skill Training Center (STC) — Offering NABTEB Certified Programs in Digital Media
+          </span>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -155,8 +162,8 @@ const Navbar = () => {
           document.body
         )}
 
-      {/* Spacer to prevent content from going under fixed navbar */}
-      <div className="h-20" />
+      {/* Spacer to prevent content from going under fixed navbar (bar + nav row) */}
+      <div className="h-28" style={{ minHeight: "7rem" }} />
     </>
   );
 };

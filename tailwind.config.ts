@@ -14,6 +14,7 @@ const config: Config = {
           dark: "#712c6a",
           light: "#8a3d7f",
         },
+        "nigerian-green": "#006747",
       },
       spacing: {
         "touch-target": "48px",
