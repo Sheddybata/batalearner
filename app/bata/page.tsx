@@ -134,7 +134,7 @@ export default function Bataverse() {
               The Bataverse
             </h1>
             <p className="text-xl text-white/90 leading-relaxed mb-8">
-              Immersive AR/VR solutions for education. Creating hands-on learning environments 
+              Bata Learner&apos;s Bataverse: immersive AR/VR for bata learners. Hands-on learning environments 
               that transform how students learn medicine, engineering, and law.
             </p>
           </motion.div>

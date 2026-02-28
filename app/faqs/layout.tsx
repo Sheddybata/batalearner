@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "FAQs",
   description:
-    "Get answers on compliance, security, implementation, Bataverse, and open-source governance.",
+    "Get answers on compliance, security, Handout, Bataverse, implementation, and open-source governance for Bata Learner.",
   path: "/faqs",
 });
 

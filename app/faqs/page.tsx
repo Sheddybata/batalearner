@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { Search, ChevronDown, Shield, Lock, FileCheck, Users, Code, Award } from "lucide-react";
+import { Search, ChevronDown, Shield, Lock, FileCheck, Users, Code, Award, FileText } from "lucide-react";
 
 interface FAQ {
   id: number;
@@ -76,6 +76,20 @@ const faqs: FAQ[] = [
     question: "What is the Bataverse and how does it work?",
     answer: "The Bataverse is our extended reality (AR/VR) platform for education. It provides immersive learning experiences for medical training, engineering visualization, and legal education. Students can practice in virtual environments, interact with 3D models, and experience hands-on learning without real-world risks.",
     icon: Users,
+  },
+  {
+    id: 13,
+    category: "Handout",
+    question: "What is Handout and how do bata learners use it?",
+    answer: "Handout is Bata Learner's AI-powered comprehension and exam-prep engine. Bata learners use Handout to turn dense course materials (PDFs) into 2-page strategic summaries and curriculum-aligned 20-question exam simulations. Handout is CCMAS-aligned and available at handout.ng.",
+    icon: FileText,
+  },
+  {
+    id: 14,
+    category: "Handout",
+    question: "How does Handout work with the Bata Learner LMS?",
+    answer: "Handout complements the Bata Learner LMS by focusing on AI-driven summarization and exam preparation. Educators and bata learners can use Handout for quick revision and practice tests while the LMS handles full course delivery, Bataverse, and institutional management.",
+    icon: FileText,
   },
   {
     id: 10,

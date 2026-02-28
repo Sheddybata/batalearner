@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Bataverse",
+  title: "Bataverse – AR/VR for Bata Learners",
   description:
-    "Experience interactive Bataverse models for Medical Training, Engineering Solutions, and Legal Education.",
+    "The Bataverse: Bata Learner's extended reality platform. AR/VR for bata learners—Medical Training, Engineering Solutions, and Legal Education.",
   path: "/bata",
 });
 

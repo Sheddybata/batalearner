@@ -1,6 +1,6 @@
 # Bata Learner - Sovereign Academic Infrastructure
 
-A global open-source learning management system aligned with Apereo Foundation standards, NUC/CCMAS compliant for Nigeria's educational institutions.
+Bata Learner delivers LMS, Bataverse, and Handout for bata learners: a global open-source learning platform aligned with Apereo Foundation standards, NUC/CCMAS compliant for Nigeria's educational institutions.
 
 ## 🏗️ Project Structure
 

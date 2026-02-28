@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const SITE_URL = "https://batalearner.edu.ng";
 const SITE_NAME = "Bata Learner";
 const DEFAULT_DESCRIPTION =
-  "A global open-source learning platform aligned with Apereo Foundation and NUC/CCMAS standards for Nigerian institutions.";
+  "Bata Learner: LMS, Bataverse, and Handout for bata learners. Open-source learning platform aligned with Apereo Foundation and NUC/CCMAS standards for Nigerian institutions.";
 
 type BuildMetadataArgs = {
   title: string;

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import { getOrganizationWebSiteJsonLd } from "@/lib/structuredData";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,13 +13,13 @@ export const metadata: Metadata = {
     default: "Bata Learner - Sovereign Academic Infrastructure",
     template: "%s | Bata Learner",
   },
-  description: "A global open-source learning management system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria's educational institutions.",
+  description: "Bata Learner: LMS, Bataverse, and Handout for bata learners. Open-source learning system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria.",
   openGraph: {
     type: "website",
     siteName: "Bata Learner",
     title: "Bata Learner - Sovereign Academic Infrastructure",
     description:
-      "A global open-source learning management system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria's educational institutions.",
+      "Bata Learner: LMS, Bataverse, and Handout for bata learners. Open-source learning system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria.",
     url: "https://batalearner.edu.ng",
     images: [{ url: "/batalearner.png" }],
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bata Learner - Sovereign Academic Infrastructure",
     description:
-      "A global open-source learning management system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria's educational institutions.",
+      "Bata Learner: LMS, Bataverse, and Handout for bata learners. Open-source learning system aligned with Apereo Foundation, NUC/CCMAS compliant for Nigeria.",
     images: ["/batalearner.png"],
   },
   icons: {
@@ -41,9 +42,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = getOrganizationWebSiteJsonLd();
+
   return (
     <html lang="en">
       <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:border focus:border-primary/30 focus:text-gray-900 focus:px-3 focus:py-2 focus:rounded-md"

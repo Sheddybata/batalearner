@@ -359,6 +359,7 @@ export default function Contact() {
                             {[
                               "LMS Implementation",
                               "Bataverse Integration",
+                              "Handout (exam prep & summaries)",
                               "NUC Compliance",
                               "Training & Support",
                               "Custom Development",

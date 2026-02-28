@@ -39,6 +39,7 @@ const Navbar = () => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/bata", label: "Bataverse" },
+    { href: "https://handout.ng", label: "Handout", external: true },
     { href: "/contact", label: "Contact" },
     { href: "/faqs", label: "FAQs" },
     { href: "/info", label: "Community" },
@@ -81,15 +82,27 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors rounded-lg hover:bg-primary/5"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) =>
+                (link as { external?: boolean }).external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors rounded-lg hover:bg-primary/5"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors rounded-lg hover:bg-primary/5"
+                  >
+                    {link.label}
+                  </Link>
+                )
+              )}
             </div>
 
             {/* Mobile Menu Button */}
@@ -141,13 +154,25 @@ const Navbar = () => {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: index * 0.05 }}
                         >
-                          <Link
-                            href={link.href}
-                            onClick={() => setIsOpen(false)}
-                            className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all active:scale-95"
-                          >
-                            {link.label}
-                          </Link>
+                          {(link as { external?: boolean }).external ? (
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => setIsOpen(false)}
+                              className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all active:scale-95"
+                            >
+                              {link.label}
+                            </a>
+                          ) : (
+                            <Link
+                              href={link.href}
+                              onClick={() => setIsOpen(false)}
+                              className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all active:scale-95"
+                            >
+                              {link.label}
+                            </Link>
+                          )}
                         </motion.div>
                       ))}
                     </div>

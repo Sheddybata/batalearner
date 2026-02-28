@@ -11,6 +11,7 @@ const Footer = () => {
       links: [
         { href: "/about", label: "About Us" },
         { href: "/bata", label: "Bataverse" },
+        { href: "https://handout.ng", label: "Handout", external: true },
         { href: "/info", label: "Community" },
       ],
     },

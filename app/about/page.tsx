@@ -5,9 +5,9 @@ import { buildMetadata } from "@/lib/seo";
 import { GraduationCap, Users, Target, Award, Code, Shield, Heart } from "lucide-react";
 
 export const metadata = buildMetadata({
-  title: "About",
+  title: "About Bata Learner – Founders & Mission",
   description:
-    "Learn about Bata Learner's mission, open-source governance model, founder leadership, and technical stewardship.",
+    "Learn about Bata Learner's mission, founders, LMS, Bataverse, and Handout. Open-source governance and technical stewardship for bata learners.",
   path: "/about",
 });
 
@@ -39,7 +39,7 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <PageHero
         title="About Bata Learner"
-        subtitle="Bridging educational gaps through accessible, high-quality digital learning solutions."
+        subtitle="Bata learners get LMS, Bataverse, and Handout. Bridging educational gaps through accessible, high-quality digital learning solutions."
         backgroundVideoSrc="/media/aboutbackground.mp4"
         lightText
       />
@@ -65,8 +65,8 @@ export default function About() {
                 </p>
                 <p>
                   We are a team of educators, technologists, and innovators dedicated to creating engaging and effective learning 
-                  experiences. We understand the challenges faced by learners and educators in today&apos;s environment, and we 
-                  strive to provide solutions that are both practical and impactful.
+                  experiences. Bata Learner offers an LMS, the Bataverse (AR/VR), and Handout (AI-powered exam prep at handout.ng)—so 
+                  bata learners and institutions have one place for courses, immersive training, and revision.
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="Leadership & Team"
-            subtitle="Meet the founders and key team members driving Bata Learner forward."
+            subtitle="Meet the founders of Bata Learner and key team members driving bata learners forward."
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

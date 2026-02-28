@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Partnership Portal",
   description:
-    "Contact Bata Learner for university partnerships, developer collaboration, and student support.",
+    "Contact Bata Learner for university partnerships, Handout and Bataverse rollout, and support for bata learners.",
   path: "/contact",
 });
 

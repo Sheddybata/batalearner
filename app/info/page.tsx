@@ -16,9 +16,9 @@ import {
 } from "lucide-react";
 
 export const metadata = buildMetadata({
-  title: "Community and Developer Hub",
+  title: "Community and Developer Hub | Bata Learner",
   description:
-    "Explore documentation, contribution paths, and open-source community resources for Bata Learner.",
+    "Bata Learner community and developer hub. Documentation, contribution paths, and open-source resources for bata learners and developers.",
   path: "/info",
 });
 

@@ -8,6 +8,7 @@ import {
   BookCheck,
   BookOpen,
   CheckCircle2,
+  ClipboardList,
   Code,
   Smartphone,
   FileText,
@@ -21,7 +22,7 @@ import {
 export const metadata = buildMetadata({
   title: "Sovereign Academic Infrastructure",
   description:
-    "Bata Learner delivers LMS, Bataverse, and open-source education infrastructure aligned with NUC/CCMAS and Apereo standards.",
+    "Bata Learner delivers LMS, Bataverse, and Handout (AI-powered exam prep). Bata learners get NUC/CCMAS and Apereo-aligned education infrastructure.",
   path: "/",
 });
 
@@ -45,7 +46,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="Our Core Platform"
-            subtitle="Three powerful pillars supporting Nigeria&apos;s educational transformation"
+            subtitle="Bata Learner gives bata learners three powerful pillars: LMS, Bataverse, and Handout—supporting Nigeria&apos;s educational transformation."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
@@ -123,38 +124,39 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Open Source Pillar */}
+            {/* Handout Pillar */}
             <div className="group">
               <div className="glassmorphism rounded-2xl p-8 h-full card-hover">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary-dark/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Code className="w-8 h-8 text-primary-dark" />
+                  <FileText className="w-8 h-8 text-primary-dark" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Open Source</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Handout</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Built on open-source principles, aligned with Apereo Foundation standards. 
-                  Transparent, secure, and community-driven development.
+                  AI-powered comprehension and exam-prep engine. Intelligent PDF analysis transforming dense course materials into summaries and curriculum-aligned quiz.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start space-x-2">
-                    <Award className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Apereo Foundation aligned</span>
+                    <FileText className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">2-page strategic summaries</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <Code className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Community-driven</span>
+                    <ClipboardList className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">20-question exam simulations</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <Shield className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Secure & transparent</span>
+                    <BookCheck className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-gray-600">CCMAS-aligned curriculum mapping</span>
                   </li>
                 </ul>
-                <Link
-                  href="/info"
+                <a
+                  href="https://handout.ng"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-primary font-semibold hover:text-primary-dark transition-colors group/link"
                 >
-                  Developer Hub
+                  Explore Handout
                   <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
